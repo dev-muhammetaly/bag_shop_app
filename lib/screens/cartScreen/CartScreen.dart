@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class Cartscreen extends StatelessWidget {
   final int amount;
-  const Cartscreen({Key? key, required this.amount}) : super(key: key);
+  const Cartscreen({super.key, required this.amount});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class Cartscreen extends StatelessWidget {
               style: TextStyle(color: Colors.black),
             ),
             Text(
-              "${amount} items",
+              "$amount items",
               style: Theme.of(context).textTheme.bodySmall,
             ),
           ],
@@ -86,7 +86,7 @@ class Cartscreen extends StatelessWidget {
             BoxShadow(
               offset: Offset(0, -15),
               blurRadius: 20,
-              color: const Color(0xFFDADADA).withOpacity(0.15),
+              color: const Color(0xFFDADADA).withValues(alpha: 0.15),
             )
           ],
         ),

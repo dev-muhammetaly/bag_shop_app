@@ -9,7 +9,7 @@ class Body extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final BagItemWatch = ref.watch(BagItemProvider);
+    final bagItemWatch = ref.watch(bagItemProvider);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -33,9 +33,9 @@ class Body extends ConsumerWidget {
                 crossAxisSpacing: 10,
                 crossAxisCount: 2,
               ),
-              itemCount: BagItemWatch.length,
+              itemCount: bagItemWatch.length,
               itemBuilder: (context, index) {
-                final item = BagItemWatch[index];
+                final item = bagItemWatch[index];
                 return GestureDetector(
                   onTap: () => Navigator.push(
                     context,
