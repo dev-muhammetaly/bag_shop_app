@@ -1,58 +1,20 @@
-# 🛍️ Bag Shop App
+# Bag Shop
 
-An e-commerce style shopping app built with Flutter where users can browse products, add items to a cart, and manage their selections. Focused on clean UI and scalable state management using Riverpod.
+A Flutter shopping-interface project with a bag catalogue, product details and a cart. It uses Riverpod to manage cart state.
 
-## 📸 Screenshots
+## Try it
 
-> _Add screenshots here by dragging images into this README on GitHub_
+Install Flutter and run:
 
-## ✨ Features
-
-- Browse products in a clean grid layout
-- Add and remove items from the shopping bag/cart
-- Real-time cart state updates across the app
-- Smooth navigation between product and cart screens
-
-## 🛠️ Tech Stack
-
-- **Flutter** — cross-platform mobile framework
-- **Dart** — programming language
-- **Riverpod** — state management
-- **Material Design** — UI components
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Flutter SDK installed
-
-### Setup
-
-1. Clone the repo
-```bash
-   git clone https://github.com/dev-muhammetaly/bag_shop_app.git
-   cd bag_shop_app
+```sh
+flutter pub get
+flutter run
 ```
 
-2. Install dependencies
-```bash
-   flutter pub get
-```
+The products are bundled with the app. No account or backend setup is needed.
 
-3. Run the app
-```bash
-   flutter run
-```
+## Scope
 
-## 📦 Dependencies
+You can browse products and manage a cart. The project focuses on the shop interface and sharing state between screens; it does not include payments, order fulfilment or a backend inventory.
 
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  flutter_riverpod: ^2.0.0
-```
-
-## 👨‍💻 Author
-
-**Muhammetaly Annageldiyew**  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammetaly-annageldiyew-497608351)
+Cart state is kept in memory, so it is not a saved shopping account.
